@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e8c3c14ff33b199b4a0838993eb8423",
+    "content-hash": "2429894639cfe8dd0fa8e64a167d8b2c",
     "packages": [
         {
             "name": "brick/math",
@@ -1051,17 +1051,77 @@
             "time": "2023-12-03T19:50:20+00:00"
         },
         {
-            "name": "laravel/framework",
-            "version": "v11.14.0",
+            "name": "laravel/breeze",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "657e8464e13147d56bc3a399115c8c26f38d4821"
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "375260724fec103e1edfd333bbb4633b67db735e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/657e8464e13147d56bc3a399115c8c26f38d4821",
-                "reference": "657e8464e13147d56bc3a399115c8c26f38d4821",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/375260724fec103e1edfd333bbb4633b67db735e",
+                "reference": "375260724fec103e1edfd333bbb4633b67db735e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^11.0",
+                "illuminate/filesystem": "^11.0",
+                "illuminate/support": "^11.0",
+                "illuminate/validation": "^11.0",
+                "php": "^8.2.0",
+                "symfony/console": "^7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^9.0",
+                "phpstan/phpstan": "^1.10"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2024-07-05T16:02:12+00:00"
+        },
+        {
+            "name": "laravel/framework",
+            "version": "v11.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "ba85f1c019bed59b3c736c9c4502805efd0ba84b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/ba85f1c019bed59b3c736c9c4502805efd0ba84b",
+                "reference": "ba85f1c019bed59b3c736c9c4502805efd0ba84b",
                 "shasum": ""
             },
             "require": {
@@ -1167,7 +1227,7 @@
                 "nyholm/psr7": "^1.2",
                 "orchestra/testbench-core": "^9.1.5",
                 "pda/pheanstalk": "^5.0",
-                "phpstan/phpstan": "^1.4.7",
+                "phpstan/phpstan": "^1.11.5",
                 "phpunit/phpunit": "^10.5|^11.0",
                 "predis/predis": "^2.0.2",
                 "resend/resend-php": "^0.10.0",
@@ -1254,7 +1314,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-07-02T17:23:58+00:00"
+            "time": "2024-07-09T15:38:12+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -1815,6 +1875,154 @@
                 }
             ],
             "time": "2024-01-28T23:22:08+00:00"
+        },
+        {
+            "name": "livewire/livewire",
+            "version": "v3.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "636725c1f87bc7844dd80277488268db27eec1aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/636725c1f87bc7844dd80277488268db27eec1aa",
+                "reference": "636725c1f87bc7844dd80277488268db27eec1aa",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^10.0|^11.0",
+                "illuminate/routing": "^10.0|^11.0",
+                "illuminate/support": "^10.0|^11.0",
+                "illuminate/validation": "^10.0|^11.0",
+                "league/mime-type-detection": "^1.9",
+                "php": "^8.1",
+                "symfony/console": "^6.0|^7.0",
+                "symfony/http-kernel": "^6.2|^7.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^10.15.0|^11.0",
+                "laravel/prompts": "^0.1.6",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^8.21.0|^9.0",
+                "orchestra/testbench-dusk": "^8.24|^9.1",
+                "phpunit/phpunit": "^10.4",
+                "psy/psysh": "^0.11.22|^0.12"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ],
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v3.5.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-07-03T17:22:45+00:00"
+        },
+        {
+            "name": "livewire/volt",
+            "version": "v1.6.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/volt.git",
+                "reference": "d09fdb4cb52c6ce821d255683195bb6d446fe141"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/volt/zipball/d09fdb4cb52c6ce821d255683195bb6d446fe141",
+                "reference": "d09fdb4cb52c6ce821d255683195bb6d446fe141",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.38.2|^11.0",
+                "livewire/livewire": "^3.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/folio": "^1.1",
+                "mockery/mockery": "^1.6",
+                "orchestra/testbench": "^8.15.0|^9.0",
+                "pestphp/pest": "^2.9.5",
+                "phpstan/phpstan": "^1.10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Livewire\\Volt\\VoltServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "functions.php"
+                ],
+                "psr-4": {
+                    "Livewire\\Volt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Nuno Maduro",
+                    "email": "nuno@laravel.com"
+                }
+            ],
+            "description": "An elegantly crafted functional API for Laravel Livewire.",
+            "homepage": "https://github.com/livewire/volt",
+            "keywords": [
+                "laravel",
+                "livewire",
+                "volt"
+            ],
+            "support": {
+                "issues": "https://github.com/livewire/volt/issues",
+                "source": "https://github.com/livewire/volt"
+            },
+            "time": "2024-05-31T19:07:20+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -5866,16 +6074,16 @@
         },
         {
             "name": "laravel/pint",
-            "version": "v1.16.1",
+            "version": "v1.16.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/pint.git",
-                "reference": "9266a47f1b9231b83e0cfd849009547329d871b1"
+                "reference": "51f1ba679a6afe0315621ad143d788bd7ded0eca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pint/zipball/9266a47f1b9231b83e0cfd849009547329d871b1",
-                "reference": "9266a47f1b9231b83e0cfd849009547329d871b1",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/51f1ba679a6afe0315621ad143d788bd7ded0eca",
+                "reference": "51f1ba679a6afe0315621ad143d788bd7ded0eca",
                 "shasum": ""
             },
             "require": {
@@ -5928,20 +6136,20 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
-            "time": "2024-06-18T16:50:05+00:00"
+            "time": "2024-07-09T15:58:08+00:00"
         },
         {
             "name": "laravel/sail",
-            "version": "v1.30.1",
+            "version": "v1.30.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "8ba049b6c06e0330b6aa1fb7af2746fb4da445e4"
+                "reference": "f5a9699a1001e15de1aa5e7cb5c9f50a3f63f887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/8ba049b6c06e0330b6aa1fb7af2746fb4da445e4",
-                "reference": "8ba049b6c06e0330b6aa1fb7af2746fb4da445e4",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/f5a9699a1001e15de1aa5e7cb5c9f50a3f63f887",
+                "reference": "f5a9699a1001e15de1aa5e7cb5c9f50a3f63f887",
                 "shasum": ""
             },
             "require": {
@@ -5991,7 +6199,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2024-07-01T20:55:03+00:00"
+            "time": "2024-07-05T16:01:51+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -6676,16 +6884,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.2.6",
+            "version": "11.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "1dc0fedac703199e8704de085e47dd46bac0dde4"
+                "reference": "15c7e69dec4a8f246840859e6b430bd2abeb5039"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1dc0fedac703199e8704de085e47dd46bac0dde4",
-                "reference": "1dc0fedac703199e8704de085e47dd46bac0dde4",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/15c7e69dec4a8f246840859e6b430bd2abeb5039",
+                "reference": "15c7e69dec4a8f246840859e6b430bd2abeb5039",
                 "shasum": ""
             },
             "require": {
@@ -6695,25 +6903,25 @@
                 "ext-mbstring": "*",
                 "ext-xml": "*",
                 "ext-xmlwriter": "*",
-                "myclabs/deep-copy": "^1.10.1",
-                "phar-io/manifest": "^2.0.3",
-                "phar-io/version": "^3.0.2",
+                "myclabs/deep-copy": "^1.12.0",
+                "phar-io/manifest": "^2.0.4",
+                "phar-io/version": "^3.2.1",
                 "php": ">=8.2",
-                "phpunit/php-code-coverage": "^11.0",
-                "phpunit/php-file-iterator": "^5.0",
-                "phpunit/php-invoker": "^5.0",
-                "phpunit/php-text-template": "^4.0",
-                "phpunit/php-timer": "^7.0",
-                "sebastian/cli-parser": "^3.0",
-                "sebastian/code-unit": "^3.0",
-                "sebastian/comparator": "^6.0",
-                "sebastian/diff": "^6.0",
-                "sebastian/environment": "^7.0",
-                "sebastian/exporter": "^6.1.2",
-                "sebastian/global-state": "^7.0",
-                "sebastian/object-enumerator": "^6.0",
-                "sebastian/type": "^5.0",
-                "sebastian/version": "^5.0"
+                "phpunit/php-code-coverage": "^11.0.5",
+                "phpunit/php-file-iterator": "^5.0.1",
+                "phpunit/php-invoker": "^5.0.1",
+                "phpunit/php-text-template": "^4.0.1",
+                "phpunit/php-timer": "^7.0.1",
+                "sebastian/cli-parser": "^3.0.2",
+                "sebastian/code-unit": "^3.0.1",
+                "sebastian/comparator": "^6.0.1",
+                "sebastian/diff": "^6.0.2",
+                "sebastian/environment": "^7.2.0",
+                "sebastian/exporter": "^6.1.3",
+                "sebastian/global-state": "^7.0.2",
+                "sebastian/object-enumerator": "^6.0.1",
+                "sebastian/type": "^5.0.1",
+                "sebastian/version": "^5.0.1"
             },
             "suggest": {
                 "ext-soap": "To be able to generate mocks based on WSDL files"
@@ -6756,7 +6964,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.2.6"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.2.7"
             },
             "funding": [
                 {
@@ -6772,7 +6980,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-03T05:51:49+00:00"
+            "time": "2024-07-10T11:50:09+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -7828,5 +8036,5 @@
         "php": "^8.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
